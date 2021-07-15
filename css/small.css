@@ -1,0 +1,236 @@
+/*font family
+font-family: 'Allerta Stencil', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/*
+#00b8ff
+#009bd6
+#00719c
+#00415a
+#001f2b
+
+#193540
+#324b55
+#4c626a
+#66787f
+#7f8f95
+#99a5aa
+#b2bbbf
+#ccd2d4
+#e5e8e9
+
+#FFFAFA
+
+*/
+
+/* text size adjust */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* box model */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: linear-gradient(#001f2b, #00415a, #00719c, #00b8ff);
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-wrapper {
+  background-color: #00415a;
+  font-family: "Allerta Stencil", sans-serif;
+  text-shadow: 5px 5px 5px #001f2b;
+  /*filter: drop-shadow(0.5px 4px 2px #001f2b5b);*/
+}
+
+.nav-wrapper > a {
+  color: #00719c;
+  padding-left: 15px;
+}
+
+.sidenav {
+  background-color: #00415a;
+}
+
+.sidenav li > a {
+  color: #e5e8e9;
+  font-family: "Allerta Stencil", sans-serif;
+  text-shadow: 2px 3px 1px #001f2b29;
+}
+
+.brand-logo {
+  filter: drop-shadow(2px 2px 1px #001f2b);
+}
+
+.hero-img {
+  /*width: 100%;
+  max-width: 100%;*/
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0.5px 4px 2px #001f2b5b);
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  padding-top: 120px;
+  font-family: "Allerta Stencil", sans-serif;
+  color: #fffafa;
+  text-shadow: 5px 5px 5px #001f2b;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 2.25rem;
+  letter-spacing: 2px;
+  line-height: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.location {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(-65deg, #001f2ba8 23%, #ccd2d4aa 23%);
+  padding: 20px 20px 0 20px;
+  margin: 10px;
+  color: #001f2b;
+}
+
+.bio > h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.bio > p {
+  text-align: left;
+  line-height: 1.5rem;
+  text-indent: 15px;
+}
+
+.bio-img {
+  border-radius: 3px;
+  padding: 10px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  background-color: #00415a;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+}
+
+footer a {
+  padding: 10px;
+  color: #00b8ff;
+  filter: drop-shadow(0 0 0.75rem #001f2b);
+}
+
+/* animation */
+#loading {
+  -webkit-animation: rotation 4s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+
+
+/*portfolio*/
+
+.Portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.port-box {
+  height: 300px;
+  width: 300px;
+  border: 1px solid #00b8ff;
+  box-sizing: border-box;
+  margin: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.one {
+  background-image: url(../images/castle650x600.png);
+}
+
+.two {
+  background-image: url(../images/queens650x600.png);
+}
+
+.three {
+  background-image: url(../images/brandthemoth650x600.png);
+}
+
+.four {
+  background-image: url(../images/ninkasi650x600.png);
+}
+
+.five {
+  background-image: url(../images/touch650x600.png);
+}
+
+.six {
+  background-image: url(../images/heist650x600.png);
+}
+
+.seven {
+  background-image: url(../images/thanos650x600.png);
+}
+
+.eight {
+  background-image: url(../images/tobe650x600.png);
+}
+
+.nine {
+  background-image: url(../images/angst650x600.png);
+}
+
+.ten {
+  background-image: url(../images/aesop650x600.png);
+}
