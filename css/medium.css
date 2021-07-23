@@ -1,10 +1,10 @@
 @media only screen and (min-width: 768px) {
-  .hero-img {
+  .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(../images/bighero.jpg);
   }
 
-  .main-heading {
+  .hero-title {
     font-size: 4.75rem;
     letter-spacing: 2px;
     line-height: 6rem;
