@@ -75,8 +75,8 @@ body {
   /*width: 100%;
   max-width: 100%;*/
   height: 90vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/newHero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body {
 }
 
 .hero-text {
-  padding-top: 120px;
+  padding-top: 150px;
   font-family: "Allerta Stencil", sans-serif;
   color: #fffafa;
   text-shadow: 5px 5px 5px #001f2b;
@@ -94,34 +94,54 @@ body {
 }
 
 .main-heading {
-  font-size: 2.25rem;
+  font-size: 2.55rem;
   letter-spacing: 2px;
   line-height: 3.5rem;
   display: flex;
   justify-content: center;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .sub-heading {
+  font-size: 1.45rem;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.location {
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
   letter-spacing: 1px;
-}
-
-.location {
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  letter-spacing: 1px;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
   background: linear-gradient(-65deg, #001f2ba8 23%, #ccd2d4aa 23%);
-  padding: 20px 20px 0 20px;
-  margin: 10px;
+  padding: 20px;
   color: #001f2b;
+  margin: 0 10px 10px 10px;
+}
+
+.about h1 {
+  font-family: "Allerta Stencil", sans-serif;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+.bio-img {
+  border-radius: 3px;
+  padding: 10px 0 30px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .artist-statement {
@@ -132,54 +152,39 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px 20px 30px 20px;
-  margin: 0 10px 40px 10px;
+  margin: 10px 10px;
 }
 
 .statement {
-  background-color: #ccd2d4b5;
+  background-color: #ccd2d4d9;
   justify-content: center;
   padding: 20px 20px 30px 20px;
   color: #001f2b;
 }
 
-.bio > h1 {
-  font-family: 'Allerta Stencil', sans-serif;
-  text-align: center;
-  font-size: 3.5rem;
-}
-
-.statement > h1 {
-  font-family: 'Allerta Stencil', sans-serif;
+.statement h1 {
+  font-family: "Allerta Stencil", sans-serif;
   text-align: center;
   font-size: 3rem;
+  margin-bottom: 0;
 }
 
-
-.bio, .statement > p {
+.about p,
+.statement p {
   text-align: left;
   line-height: 1.5rem;
   text-indent: 15px;
-}
-
-.bio-img {
-  border-radius: 3px;
-  padding: 10px 0 30px 0;
-  display: flex;
-  justify-content: center; 
-}
-
-.carousel {
-  height: 300px;
+  margin: 0px;
 }
 
 .contact-box {
   background-color: #ccd2d4b5;
   padding: 20px 20px 30px 20px;
-  color: #001f2b;
-  font-family: 'Allerta Stencil', sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   margin: 0 10px 40px 10px;
   display: flex;
-	justify-content: center;
+  justify-content: center;
+  color: #001f2b;
 }
 
 .contact-box h1 {
@@ -188,12 +193,38 @@ body {
 
 .btn {
   background-color: #001f2b;
+  color: #b2bbbf;
 }
 
 .btn:hover {
   background-color: #00b8ff;
 }
 
+/* label focus color */
+.input-field input[type="text"]:focus + label,
+.input-field input[type="email"]:focus + label,
+.materialize-textarea:focus:not([readonly]) + label {
+  color: #00b8ff !important;
+}
+
+/* label underline focus color */
+.input-field input[type="text"]:focus,
+.input-field input[type="email"]:focus,
+.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #00b8ff !important;
+  box-shadow: 0 1px 0 0 #00b8ff !important;
+}
+
+.material-icons.active {
+  color: #00b8ff !important;
+}
+/* progress bar */
+.progress {
+  background-color: #001f2b;
+}
+.progress .indeterminate {
+  background-color: #00719c;
+}
 
 footer {
   left: 0;
@@ -225,8 +256,44 @@ footer a {
   }
 }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+  80% {
+    transform: translate(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+  80% {
+    transform: translate(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
 /*portfolio*/
 
@@ -237,7 +304,7 @@ footer a {
   margin: 50px 0 100px 0;
 }
 
-.port-box {
+.card {
   height: 350px;
   width: 350px;
   border: 1px solid white;
@@ -249,20 +316,18 @@ footer a {
   border-radius: 3px;
 }
 
-.port-box  h5 {
+.card h5 {
   align-self: flex-end;
-  margin-bottom:  10px;
+  margin-bottom: 10px;
   font-size: 1.25rem;
   text-align: center;
   background-color: #00415aaa;
   width: 100%;
   padding: 10px;
-  font-family: 'Allerta Stencil', sans-serif;
+  font-family: "Allerta Stencil", sans-serif;
   color: #fffafa;
   text-shadow: 5px 5px 5px #001f2b;
 }
-
-
 
 .one {
   background-image: url(../images/castle650x600.png);
@@ -333,9 +398,4 @@ footer a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
-
-
-
 
