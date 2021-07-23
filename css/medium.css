@@ -1,26 +1,18 @@
-@media only screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(../images/bighero.jpg);
-  }
-
+@media only screen and (min-width: 900px) {
   .hero-title {
-    font-size: 4.75rem;
-    letter-spacing: 2px;
-    line-height: 6rem;
+    font-size: 7rem;
+    line-height: 10rem;
   }
 
   .sub-heading {
-    font-size: 3rem;
-    letter-spacing: 1px;
+    font-size: 4rem;
   }
 
   .location {
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 3rem;
   }
   .about {
-    background: linear-gradient(-65deg, #001f2ba8 35%, #ccd2d4aa 35%);
+    background: linear-gradient(-65deg, #001f2ba8 25%, #ccd2d4aa 25%);
     padding-bottom: 20px;
     margin: 50px 20px;
   }
@@ -29,35 +21,28 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding-bottom: 30px;
+    padding: 30px;
+  }
+
+ 
+
+  .statement {
+    width: 60%;
+    margin-left: 350px;
+    padding-bottom: 100px;
+  }
+
+  .artist-statement {
+    padding: 60px;
   }
 
   .about p,
   .statement p {
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-
-  .statement {
-    width: 60%;
-    margin-left: 270px;
-  }
-
-  .artist-statement {
-    background-image: url(../images/bigbackground.jpg);
-    margin: 50px 20px;
-  }
-
-  .carousel .carousel-item {
-    width: 300px !important;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .contact-box {
-    margin: 50px 20px;
+    margin: 100px;
   }
-
-  footer {
-    padding: 10px;
-  }
-
 } /*end of media query*/
