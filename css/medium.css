@@ -1,11 +1,66 @@
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+  .hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/bighero.jpg);
+  }
+
+  .main-heading {
+    font-size: 4.75rem;
+    letter-spacing: 2px;
+    line-height: 6rem;
+  }
+
+  .sub-heading {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+
+  .location {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .about {
+    background: linear-gradient(-65deg, #001f2ba8 35%, #ccd2d4aa 35%);
+    padding-bottom: 20px;
+    margin: 50px 20px;
+  }
+
+  .bio {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+
+  .about p,
+  .statement p {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .statement {
+    width: 60%;
+    margin-left: 270px;
+  }
+
+  .artist-statement {
+    background-image: url(../images/bigbackground.jpg);
+    margin: 50px 20px;
+  }
+
+  .carousel .carousel-item {
+    width: 300px !important;
+  }
+
+  .contact-box {
+    margin: 50px 20px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  footer i {
     
-
-
-
-
-
-
-
-
+  }
 } /*end of media query*/
