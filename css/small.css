@@ -43,6 +43,9 @@ body {
   background-image: linear-gradient(#001f2b, #00415a, #00719c, #00b8ff);
   margin: 0px;
   padding: 0px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav-wrapper {
@@ -212,6 +215,9 @@ body {
 .material-icons.active {
   color: #00b8ff !important;
 }
+
+
+
 /* progress bar */
 .progress {
   background-color: #001f2b;
@@ -391,4 +397,27 @@ footer a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+
+
+/*thank you page*/
+
+.thank_you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.thank_you h1 {
+  background: linear-gradient(-60deg, #001f2ba8 35%, #ccd2d4aa 35%);
+  color: #001f2b;
+  font-family: 'Allerta Stencil', sans-serif;
+  border-radius: 3px;
+  padding: 60px;
+  color: #fffafa;
+  text-shadow: 5px 5px 5px #001f2b;
+  font-size: 2.5rem;
 }
