@@ -45,4 +45,11 @@
   .contact-box {
     margin: 100px;
   }
+
+  /*thank you page*/
+
+.thank_you h1 {
+  padding: 90px;
+  font-size: 9rem;
+}
 } /*end of media query*/
