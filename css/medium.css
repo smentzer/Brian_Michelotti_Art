@@ -59,6 +59,11 @@
   footer {
     padding: 10px;
   }
+/*thank you page*/
 
+.thank_you h1 {
+  padding: 80px;
+  font-size: 6rem;
+}
 
 } /*end of media query*/
