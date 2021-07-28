@@ -191,6 +191,7 @@ body {
 .btn {
   background-color: #001f2b;
   color: #b2bbbf;
+  transition: all 0.5s ease;
 }
 
 .btn:hover {
