@@ -127,7 +127,7 @@ body {
   margin: 0 10px 10px 10px;
 }
 
-.about h1 {
+.about h2 {
   font-family: "Allerta Stencil", sans-serif;
   text-align: center;
   font-size: 3.5rem;
@@ -159,7 +159,7 @@ body {
   color: #001f2b;
 }
 
-.statement h1 {
+.statement h2 {
   font-family: "Allerta Stencil", sans-serif;
   text-align: center;
   font-size: 3rem;
@@ -184,14 +184,14 @@ body {
   color: #001f2b;
 }
 
-.contact-box h1 {
+.contact-box h2 {
   text-align: center;
 }
 
 .btn {
   background-color: #001f2b;
   color: #b2bbbf;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .btn:hover {
@@ -303,6 +303,7 @@ footer a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 50px 0 100px 0;
+  height: auto;
 }
 
 .card {
@@ -419,6 +420,6 @@ footer a {
   border-radius: 3px;
   padding: 60px;
   color: #fffafa;
-  text-shadow: 5px 5px 5px #001f2b;
+  text-shadow: 5px 5px 5px #001f2b23;
   font-size: 2.5rem;
 }
